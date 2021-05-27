@@ -1,5 +1,6 @@
 import React from "react";
 import PiggyBank from "./PiggyBank";
+import Transaction from "./Transaction";
 
 function App() {
   const [piggybanks, setPiggybanks] = React.useState([]);
