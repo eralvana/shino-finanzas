@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{makeidx}
+\usetikzlibrary{arrows}
+\usepackage{multicol}
+
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=red]{hyperref}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\usepackage{setspace}
+
+%\voffset=-2 cm
+%\hoffset=-2 cm
+%\textwidth=19 cm
+%\textheight=22 cm
+
+
+\theoremstyle{definition}
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{df}[teo]{Definición}
+\newtheorem{ej}[teo]{Ejercicio}
+\newtheorem{prop}[teo]{Proposición}
+\newtheorem{lema}[teo]{Lema}
+\newtheorem{cor}[teo]{Corolario}
+\newtheorem{obs}[teo]{Observación}
+\newtheorem{ejp}[teo]{Ejemplo}
+
+\newcommand{\N}{\mathbb N}
+\newcommand{\Pol}{{\cal P}}
+\newcommand{\F}{{\cal F}}
+
+\newenvironment{pba}{\noindent\textbf{\textcolor{blue}{Prueba:}}}{\begin{flushright}
+$\square$ \end{flushright}}
+\newenvironment{dem}{\noindent\textbf{\textcolor{blue}{Demostración}:}}{\begin{flushright}
+\rule{1ex}{1ex} \end{flushright}}
+
+
+
+\title{Proyecto \textbf{Finanzas}}
+\author{Braulio Aguilar Simón \and Jorge Leopoldo Caballero Arredondo \and Ernesto Alejandro Vázquez Navarro}
+
+\begin{document}
+
+\maketitle
+
+\abstract{El presente proyecto intenta representar los requerimientos para el proyecto \textbf{Finanzas}.}
+
+\section{Tablas}
+
+Se requerirá de la siguiente estructura de tablas:
+\begin{itemize}
+\item Una tabla de \textit{Ingresos general} con las siguientes columnas:
+\begin{itemize}
+\item Nombre (Texto)
+\item Tipo de ingreso (Dos opciones: eventual-periódico)
+\item Fecha (Formato de fecha)
+\item Monto (Formato de cantidad a dos dígitos)
+\item Concepto (Texto)
+\item Nota (Texto para añadir información adicional)
+\end{itemize}
+
+\item Distintas tablas de \textit{Ingresos particulares} (ejemplos: Tarjeta de crédito, tarjeta de débito, dinero en el colchón, dinero en mi bolsillo, etcétera) con las siguientes columnas:
+\begin{itemize}
+\item Nombre (Texto)
+\item Fuente de Ingreso (Texto: Nombre de la tabla \textit{Ingresos general})
+\item Fecha (Formato de fecha)
+\item Monto (Formato de cantidad a dos dígitos)
+\item Concepto (Texto)
+\item Nota (Texto para añadir información adicional)
+\end{itemize}
+
+\item Distintas tablas de \textit{Egresos} (ejemplo: Tarjeta de crédito, gastos, compras, etcétera) con las siguientes columnas:
+\begin{itemize}
+\item Nombre (Texto)
+\item Tipo de ingreso (se alimentará de la Tabla de \textit{Ingresos particulares})
+\item Fecha (Formato de fecha)
+\item Monto (Formato de cantidad a dos dígitos)
+\item Concepto (Texto)
+\item Pagos (Número entero que por defecto es uno)
+\item Nota (Texto para añadir información adicional)
+\end{itemize}
+
+\end{itemize}
+
+\end{document}
+
+
